@@ -16,7 +16,7 @@ module.exports = function(app){
       minLength: 3,
       maxLength: -1,
       api_key: app.config.wordnikAPIKey,
-      limit: 10
+      limit: 12
     };
 
     var qs = querystring.stringify(query),
@@ -40,17 +40,44 @@ module.exports = function(app){
     return deferred.promise;
   };
 
+  var getPrefix = function(){
+    var prefixes = ['wow ', 'so ', 'many ', 'such '],
+        prefix = '';
+
+    if(Math.random() > .25){
+      prefix = prefixes[parseInt(prefixes.length * Math.random())];
+    }
+
+    return prefix;
+  };
+
+  var getSuffix = function(){
+    var suffixes = ['!', ' wow'],
+        suffix = '';
+
+    if(Math.random() > .66){
+      suffix = suffixes[parseInt(suffixes.length * Math.random())];
+    }
+
+    return suffix;
+  };
+
+  var getStartingSpacing = function(i){
+    return i%2 ? '' : '   ';
+  };
+
+  var getEndingSpacing = function(i){
+    return i%2 ? '\n' : '';
+  };
+
   app.get('/:word', function(req, res){
     var word = decodeURIComponent(req.params.word.replace(/-/g, ' ')),
-        promise = getDoges();
-
-    var prefixes = ['wow', 'so', 'many', 'such'];
+        promise = getDoges(),
+        txt = 'wow such ' + word + '\n';
 
     promise.then(function(adjectives){
-      var txt = 'wow such ' + word + '\n';
-
-      adjectives.forEach(function(a){
-        txt = txt + prefixes[parseInt(prefixes.length * Math.random())] + ' ' + a + '\n';
+      adjectives.forEach(function(a, i){
+        txt = txt + getPrefix() + a + getSuffix() + '\n';
       });
 
       res.end(txt);

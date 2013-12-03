@@ -1,7 +1,7 @@
-Contributing to metaphorgy
-==========================
+Contributing to wowsuch
+=======================
 
-So you want to contribute to metaphorgy? Fantastic! Here's a brief overview on
+So you want to contribute to wowsuch? Fantastic! Here's a brief overview on
 how best to do so.
 
 ## What to change
@@ -14,7 +14,7 @@ Here's some examples of things you might want to make a pull request for:
 
 If you have a more deeply-rooted problem with how the program is built or some
 of the stylistic decisions made in the code, it's best to
-[create an issue](https://github.com/sarahgp/metaphorgy/issues) before putting
+[create an issue](https://github.com/sarahgp/wowsuch/issues) before putting
 the effort into a pull request. The same goes for new features - it is
 best to check the project's direction, existing pull requests, and currently open
 and closed issues first.
@@ -30,7 +30,7 @@ be found in the README.
 
 ## Using Git appropriately
 
-1. [Fork the repository](https://github.com/sarahgp/metaphorgy/fork_select) to
+1. [Fork the repository](https://github.com/sarahgp/wowsuch/fork_select) to
   your Github account.
 2. Create a *topical branch* - a branch whose name is succint but explains what
   you're doing, such as "new-grass-tiles"
@@ -43,6 +43,6 @@ Please make separate branches for unrelated changes!
 
 ## Licensing
 
-Metaphorgy is MIT licensed. See details in the LICENSE file. This is a very permissive
+wowsuch is MIT licensed. See details in the LICENSE file. This is a very permissive
 scheme, GPL-compatible but without many of the restrictions of GPL.
 

@@ -1,8 +1,21 @@
-metaphorgy
-==========
+wowsuch
+=======
 
-A website to help you build metaphors.
-[http://metaphor.gy](http://metaphor.gy)
+```
+wow such wowsuch
+Geechee wow
+so budgeteer wow
+much courting
+much internalist
+much lovelock!
+much prenomination
+psychodynamics!
+so ridesharing wow
+sheikdom wow
+spams wow
+many underreported
+much valiantness!
+```
 
 Getting Started
 ===============

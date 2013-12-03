@@ -41,7 +41,7 @@ module.exports = function(app){
   };
 
   var getPrefix = function(){
-    var prefixes = ['wow ', 'so ', 'many ', 'such '],
+    var prefixes = ['wow ', 'so ', 'many ', 'such ', 'much '],
         prefix = '';
 
     if(Math.random() > .25){

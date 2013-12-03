@@ -1,0 +1,24 @@
+{
+  "name": "metaphorgy-client",
+  "description": "web client for metaphorgy",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarahgp/metaphorgy-client.git"
+  },
+  "dependencies": {
+    "connect": "2.x",
+    "express": "3.x",
+    "newrelic": "~1.1.1",
+    "q": "~0.9.7"
+  },
+  "engines": {
+    "node": ">= 0.10.5",
+    "npm": ">= 1.1.49"
+  },
+  "private": true
+}
